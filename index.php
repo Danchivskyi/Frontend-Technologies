@@ -842,7 +842,7 @@
             <table>
                 <tr>
                     <td><label for="name">Imie i nazwisko:</label></td>
-                    <td><input type="text" name="name" id="name" size="25" placeholder="Jan Kowalski"/></td>
+                    <td><input type="text" name="name" id="name" size="25" placeholder="Kacper Radomski"/></td>
                 </tr>
     
                 <tr>
