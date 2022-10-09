@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
           integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -155,7 +157,7 @@
             </div>
         </div>
         <button class="ui button">
-                View
+                <a href="buy.html">View</a>
         </button>
     </div>
 
@@ -268,22 +270,22 @@
                 <input type="radio">
             </td>
             <th scope="row">C001</th>
-            <td>Angel Jude</td>
-            <td>Suarez</td>
+            <td>Kacper Juliusz</td>
+            <td>Radomski</td>
             <td>suarez081119@gmail.com</td>
-            <td>Himamaylan City</td>
-            <td>09272777334</td>
+            <td>Rzeszow</td>
+            <td>66 777 33 48</td>
         </tr>
         <tr>
             <td>
                 <input type="radio">
             </td>
             <th scope="row">C002</th>
-            <td>Adones</td>
-            <td>Evangelista</td>
+            <td>Damian</td>
+            <td>Zaloguj</td>
             <td>adones@gmail.com</td>
-            <td>Kabankalan City</td>
-            <td>09123456789</td>
+            <td>Poznan</td>
+            <td>55 222 333</td>
         </tr>
         <tr>
             <td>
@@ -291,10 +293,10 @@
             </td>
             <th scope="row">C003</th>
             <td>Adrian</td>
-            <td>Mercurio</td>
+            <td>Konkurent</td>
             <td>adrian@gmail.com</td>
-            <td>Himamaylan City</td>
-            <td>0987654321</td>
+            <td>Warszawa</td>
+            <td>44 232 23 23</td>
         </tr>
         </tbody>
     </table>
@@ -436,9 +438,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -450,9 +452,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -464,9 +466,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -478,9 +480,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -492,9 +494,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -506,9 +508,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -520,9 +522,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -534,9 +536,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -548,9 +550,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -562,9 +564,9 @@
                 <input type="radio">
             </td>
             <th scope="row">I001</th>
-            <td>School Bag</td>
-            <td>Rs.1570.00</td>
-            <td>05/03/2019</td>
+            <td>Bilet na Oktobeer</td>
+            <td>Zł.5.00</td>
+            <td>04/10/2022</td>
             <td>100</td>
             <td>46</td>
             <td>0</td>
@@ -800,37 +802,80 @@
         <tbody>
         <tr>
             <th scope="row">Ord-001</th>
-            <td>02-04-2019</td>
+            <td>04-10-2022</td>
             <td>C001</td>
-            <td>Rs.12000.00</td>
+            <td>Zł.230.00</td>
         </tr>
         <tr>
             <th scope="row">Ord-002</th>
-            <td>02-04-2019</td>
+            <td>04-10-2022</td>
             <td>C001</td>
-            <td>Rs.12000.00</td>
+            <td>Zł.230.00</td>
         </tr>
         <tr>
             <th scope="row">Ord-003</th>
-            <td>02-04-2019</td>
+            <td>04-10-2022</td>
             <td>C001</td>
-            <td>Rs.12000.00</td>
+            <td>Zł.230.00</td>
         </tr>
         <tr>
             <th scope="row">Ord-004</th>
-            <td>02-04-2019</td>
+            <td>04-10-2022</td>
             <td>C001</td>
-            <td>Rs.12000.00</td>
+            <td>Zł.230.00</td>
         </tr>
         <tr>
             <th scope="row">Ord-005</th>
-            <td>02-04-2019</td>
+            <td>04-10-2022</td>
             <td>C001</td>
-            <td>Rs.12000.00</td>
+            <td>Zł.230.00</td>
         </tr>
         </tbody>
     </table>
 </div>
+
+<!--Formularz kontaktowy-->
+<section>
+    <div id="contact">
+        <h2>Kontakt</h2>
+        <form action="index.html" method="GET">
+            <table>
+                <tr>
+                    <td><label for="name">Imie i nazwisko:</label></td>
+                    <td><input type="text" name="name" id="name" size="25" placeholder="Jan Kowalski"/></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="nr_phone">Numer telefonu:</label></td>
+                    <td><input type="text" id="nr_phone" name="nr_phone" size="30" placeholder="123-456-678" /></td>
+                </tr>
+     
+                <tr>
+                    <td><label for="mail">E-mail:</label></td>
+                    <td><input type="text" id="mail" name="mail" size="30" placeholder="nazwa@domena.tld" /></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="temat">Temat:</label></td>
+                    <td><input type="text" name="temat" id="temat" required placeholder="Temat"/></td>
+                </tr>
+    
+                <tr>
+                    <td><label for="message">Wiadomość:</label></td>
+                    <td><input type="text" id="message" name="message" size="45" placeholder="Wiadomość do nas"/></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Wyślij"/></td>
+                </tr>
+    
+            </table>
+        </form>
+    </div>
+    </section>
+    <!---->
+
 
 <!-- Optional JavaScript -->
 <script src="js/jquery-3.4.1.min.js"></script>
