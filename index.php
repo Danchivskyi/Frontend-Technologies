@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/Style.css">
-    <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
