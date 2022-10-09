@@ -1,0 +1,79 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  /*Dla czalej częsci(ciała)*/
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    color: white;
+  }
+  
+
+
+  
+  /*Dla section*/
+  section {
+    color: black;
+    padding: 1.5rem;
+    font-size: .7em;
+  }
+  
+  /*Dla tabeli cennik*/
+  table {
+    background-color: #00FFFF;
+    font-size:15px;
+  }
+  
+  /*Dla tabeli cennik*/
+  table caption {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  /*Tabela Cennik - Opasek z nazwami*/
+  thead {
+    background-color: darkcyan;
+  }
+  
+  /*Dla linijek tabeli Cennik*/
+  th, td{
+    padding: 5px;
+  }
+  
+  
+  
+  /*Animacje tabeli Cennik*/
+  tbody tr:nth-child(even) {
+    background-color: #666666;
+    color: white;
+  }
+  
+  /*Animacje tabeli Cennik*/
+  tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+  }
+  
+  /*Animacje tabeli Cennik*/
+  tbody td:nth-child(even) {
+    font-weight: bold;
+  }
+  
+  /*Animacje tabeli Cennik*/
+  tbody tr:hover {
+    background-color: red;
+    cursor: pointer;
+  }    
+      
+  #name /*Formularz kontaktowy - Imie i nazwisko*/
+  {
+      background-color: lightgray;
+      min-height: 20px;
+  }
+ 
+  
