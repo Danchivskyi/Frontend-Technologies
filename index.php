@@ -104,7 +104,7 @@
 				<?php echo " " . $_SESSION['username']; ?>
 			</strong>
 			
-			<p><a href="index.php?logout='1'" style="color: yellow;">Wyloguj</a>
+			<p><a href="index.php?logout='1'" style="color: red;">Wyloguj</a>
 	<?php endif ?>
 	<!---->
     </section>
@@ -124,7 +124,7 @@
                 316
             </div>
         </div>
-        <button class="ui button">
+        <button class="ui button" >
                 View
         </button>
     </div>
@@ -172,7 +172,7 @@
         </div>
         <button class="ui button">
             <a>
-                View
+            <a href="chat.html">View</a>
             </a>
         </button>
     </div>
