@@ -2,19 +2,29 @@ var messages = [],
   lastUserMessage = "", 
   botMessage = "", 
   botName = 'Chatbot', 
+  botLastName = 'Anonymous'
   talking = true; 
 
 function chatbotResponse() {
   talking = true;
   botMessage = "Siema, ziomeczku"; 
 
-  if (lastUserMessage === 'hi' || lastUserMessage =='hello' || lastUserMessage =='siema') {
-    const hi = ['hi','siema','czesc']
+  if (lastUserMessage === 'Hi' || lastUserMessage =='Hello' || lastUserMessage =='siema') {
+    const hi = ['Hi','Siema','Czesc']
+    botMessage = hi[Math.floor(Math.random()*(hi.length))];;
+  }
+
+  if (lastUserMessage === 'Co tam' || lastUserMessage =='Jak tam' || lastUserMessage =='co robisz') {
+    const hi = ['A, dobrze','super','elegancko']
     botMessage = hi[Math.floor(Math.random()*(hi.length))];;
   }
 
   if (lastUserMessage === 'name') {
     botMessage = 'My name is ' + botName;
+  }
+
+  if(lastUserMessage === 'nazwisko'){
+    botMessage = 'Moje nazwisko ' + botLastName;
   }
 }
 
