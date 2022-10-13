@@ -8,6 +8,11 @@ cFiles = [
 
   // (A2) IMAGES
   "images/ticket.jpg",
+  "images/bilecik.jpg",
+  "images/disco.jpg",
+  "images/festiwal.jpg",
+  "images/piosenka.jpg",
+  "images/tiketik.jpg",
 ];
 
 // (B) CREATE/INSTALL CACHE

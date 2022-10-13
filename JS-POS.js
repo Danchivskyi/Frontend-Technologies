@@ -1,7 +1,11 @@
 var products = {
   // (A) PRODUCTS LIST
   list : {
-    1 : { name:"Octobeer ticket", img:"ticket.jpg", price: 5 }
+    1 : { name:"Octobeer ticket", img:"ticket.jpg", price: 5 },
+    2 : { name:"Disco", img:"disco.jpg", price:  10 },
+    3 : { name:"Hip Hop Festiwal", img:"festiwal.jpg", price: 15 },
+    4 : { name:"Piosenka w melonku", img:"piosenka.jpg", price: 15 },
+    5 : { name:"Bilet na pokazy", img:"tiketik.jpg", price: 10 },
   },
 
   // (B) DRAW HTML PRODUCTS LIST
