@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -31,7 +31,6 @@
        <img class="d-none d-lg-block" src="logo.jpg" width="300" height="30">
     </a>
     <a class="navbar-brand"  style="font-size: 25px;color: white">
-        
         System obsługi
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -65,7 +64,7 @@
 
 
    <section>
-<!--Rejestracja oraz logowanie-->
+<!--Login Panel-->
 <?php
 		session_start();
 
