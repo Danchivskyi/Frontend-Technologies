@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/Style.css">
+    
 
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -53,9 +54,6 @@
                    <button class="nav-link btn-lg btn btn-info" id="navOrder">Order</button>
                </li>
                <li class="nav-item">
-                   <button class="nav-link btn-lg btn btn-dark" id="navOrder"><a href="about.html">About</a></button>
-               </li>
-               <li class="nav-item">
                    <button class="nav-link btn-lg btn btn-dark" id="navOrder"><a href="contact.html">Contact</a></button>
                </li>
            </ul>
@@ -78,8 +76,7 @@
 		header("location: index.php");
 		}
 ?>
-	
-    <nav class="navigation">
+    <nav class="card">
 	<?php if(!isset($_SESSION['username'])) : ?>
 		<?php
 			echo '<li><a href="register.php">Rejestracja</a></li></ul>';
@@ -120,7 +117,7 @@
         <div class="content">
             <div class="header">Customers</div>
             <div class="description">
-                316
+                3
             </div>
         </div>
         <button class="ui button" >
@@ -136,11 +133,11 @@
         <div class="content">
             <div class="header">Items</div>
             <div class="description">
-                2746
+                10
             </div>
         </div>
         <button class="ui button">
-                View
+            <a href="buy.html">View</a>
         </button>
     </div>
 
@@ -151,11 +148,11 @@
         <div class="content">
             <div class="header">Orders</div>
             <div class="description">
-                511
+                5
             </div>
         </div>
         <button class="ui button">
-                <a href="buy.html">View</a>
+                <a href="about.html">View</a>
         </button>
     </div>
 
@@ -166,13 +163,11 @@
         <div class="content">
             <div class="header">New Messages</div>
             <div class="description">
-                189
+                0
             </div>
         </div>
         <button class="ui button">
-            <a>
             <a href="chat.html">View</a>
-            </a>
         </button>
     </div>
 </div>
@@ -191,7 +186,7 @@
 </div>
 </div>
 
-
+<!--Customers-->
 <div id="customerPanel" style="display: none; ">
         <button type="button" class="btn btn-outline-secondary" style="margin: 10px" id="viewCustomers">
             <i class="fas fa-arrow-circle-left"></i>
@@ -358,6 +353,7 @@
     </div>
 </div>
 
+<!--Items-->
 <div id="itemPanel" style="display: none">
     <button type="button" class="btn btn-outline-secondary" style="margin: 10px" id="viewItems">
         <i class="fas fa-arrow-circle-left"></i>
@@ -632,6 +628,7 @@
     </div>
 </div>
 
+<!--Orders-->
 <div id="orderPanel" style="display: none">
     <button type="button" class="btn btn-outline-secondary" style="margin: 10px" id="viewOrders">
         <i class="fas fa-arrow-circle-left"></i>
@@ -832,48 +829,45 @@
     </table>
 </div>
 
-<!--Formularz kontaktowy-->
-<section>
-    <div id="contact">
-        <h2>Kontakt</h2>
-        <form action="index.html" method="GET">
-            <table>
-                <tr>
-                    <td><label for="name">Imie i nazwisko:</label></td>
-                    <td><input type="text" name="name" id="name" size="25" placeholder="Kacper Radomski"/></td>
-                </tr>
-    
-                <tr>
-                    <td><label for="nr_phone">Numer telefonu:</label></td>
-                    <td><input type="text" id="nr_phone" name="nr_phone" size="30" placeholder="123-456-678" /></td>
-                </tr>
-     
-                <tr>
-                    <td><label for="mail">E-mail:</label></td>
-                    <td><input type="text" id="mail" name="mail" size="30" placeholder="nazwa@domena.tld" /></td>
-                </tr>
-    
-                <tr>
-                    <td><label for="temat">Temat:</label></td>
-                    <td><input type="text" name="temat" id="temat" required placeholder="Temat"/></td>
-                </tr>
-    
-                <tr>
-                    <td><label for="message">Wiadomość:</label></td>
-                    <td><input type="text" id="message" name="message" size="45" placeholder="Wiadomość do nas"/></td>
-                </tr>
-    
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Wyślij"/></td>
-                </tr>
-    
-            </table>
-        </form>
-    </div>
-    </section>
-    <!---->
 
+<!--Formularz kontaktowy-->
+<div class="card" id="contact" style="margin: 1%">
+    <h2>Kontakt</h2>
+    <form action="index.html" method="GET">
+        <table>
+            <tr>
+                <td><label for="name">Imie i nazwisko:</label></td>
+                <td><input type="text" name="name" id="name" size="25" placeholder="Kacper Radomski"/></td>
+            </tr>
+    
+            <tr>
+                <td><label for="nr_phone">Numer telefonu:</label></td>
+                <td><input type="text" id="nr_phone" name="nr_phone" size="30" placeholder="123-456-678" /></td>
+            </tr>
+     
+            <tr>
+                <td><label for="mail">E-mail:</label></td>
+                <td><input type="text" id="mail" name="mail" size="30" placeholder="nazwa@domena.tld" /></td>
+            </tr>
+    
+            <tr>
+                <td><label for="temat">Temat:</label></td>
+                <td><input type="text" name="temat" id="temat" required placeholder="Temat"/></td>
+            </tr>
+    
+            <tr>
+                <td><label for="message">Wiadomość:</label></td>
+                <td><input type="text" id="message" name="message" size="45" placeholder="Wiadomość do nas"/></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Wyślij"/></td>
+            </tr>
+    
+        </table>
+    </form>
+</div>
 
 <!-- Optional JavaScript -->
 <script src="js/jquery-3.4.1.min.js"></script>
