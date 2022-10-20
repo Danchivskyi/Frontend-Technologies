@@ -4,9 +4,13 @@ Strona napisana ma na celu kupowanie biletów na koncerty oraz wydarzenia. Takż
 
 
 **Opisanie plików HTML:**
+
 [about.html] Odpowiada za formularz kontaktowy. Ma na celu utworzenia szablonu formularza kontaktowego, który użytkownik może uzupełnić.
+
 [buy.html] Odpowiada za utworzenie strony z zakupem biletów. 
+
 [chat.html] Odpowiada za utworzenie strony z chatem.
+
 [contact.html] Odpowida za ikonkę na górnym pasku, tworzy stronę z formularzem kontaktowym. 
 
 **Opisanie plików CSS:**
