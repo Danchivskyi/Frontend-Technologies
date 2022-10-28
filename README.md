@@ -1,6 +1,6 @@
 # Frontend-Technologies
 
-Strona napisana ma na celu kupowanie biletów na koncerty oraz wydarzenia. Także ma możliwość dodania, przeglądnięcia użytkowników oraz zamówień. Ma możliwość wypełnienia formularza kontaktowego oraz pisanie z botem za pomocą chatu. Jest możliwość rejestracji i logowania użytkowników. 
+Strona napisana ma na celu kupowanie biletów na koncerty oraz wydarzenia. Także ma możliwość dodania, przeglądnięcia użytkowników oraz zamówień. Ma możliwość wypełnienia formularza kontaktowego oraz pisanie z botem za pomocą chatu. Jest możliwość rejestracji i logowania użytkowników. Dla wykonania tego proejktu wykorzystałem Frontendowych języków programowania, takich jak HTML, CSS, JS, PHP. Także wykorzystałem w tym cely darmowy pakiet XAMPP w celu dodania bazy danych oraz serwera Apache.
 
 
 **Opisanie plików HTML:**
