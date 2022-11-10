@@ -1,79 +1,81 @@
-html {
-    font-size: 62.5%;
+/*CSS file, ktory jest potrzebny dla contact.html w celu stylizacji Contact menu gornego paska*/
+
+html { /*Wybiera na podstawi nazwy elementa html*/
+    font-size: 62.5%; /**/
   }
   
   /*Dla czalej częsci(ciała)*/
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5em;
-    color: white;
+  body { /*Wybiera na podstawie nazwy elementa body*/
+    margin: 0; /*Styl, ktory definiuje wielkosc marginesu dla elemntu*/
+    min-height: 100vh; /*Okreslamy minimalny rozmiar wysokosci obszaru zawartosci interesujacego nas elementu body*/
+    display: flex; /*Definiujemy sposob wyswietlenia elementu*/
+    flex-direction: column; /*Wyswietlamy elementy kolumnowo*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Deklaracja czcionek*/
+    font-size: 2.5em; /*Definiowanie wielkosci czcionki*/
+    color: white; /*Ustawianie koloru*/
   }
   
 
 
   
   /*Dla section*/
-  section {
-    color: black;
-    padding: 1.5rem;
-    font-size: .7em;
+  section { /*Wybiera na podstawie nazwy elementu section*/
+    color: black; /*Ustawia kolor dla elementu*/
+    padding: 1.5rem; /*Ustawiamy odstep wewnetrzny*/
+    font-size: .7em; /*Definiowanie wielkosci czcionki*/
   }
   
   /*Dla tabeli cennik*/
-  table {
-    background-color: #00FFFF;
-    font-size:15px;
+  table { /*Wybiera na podstawie nazwy elemnta table*/
+    background-color: #00FFFF; /*Ustawia kolor tla*/
+    font-size:15px; /*Definiowanie wielkosci czcionki*/
   }
   
   /*Dla tabeli cennik*/
-  table caption {
-    font-size: 1.5em;
-    margin-bottom: 2rem;
-    text-align: left;
+  table caption { /*Wybiera na podstawie nazwy elementa table caption*/
+    font-size: 1.5em; /*Definiowanie wielkosci czcionki*/
+    margin-bottom: 2rem; /*Okreslenie rozmiaru dolnego zewnetrznego marginesu*/
+    text-align: left; /**/
   }
   
   /*Tabela Cennik - Opasek z nazwami*/
-  thead {
-    background-color: darkcyan;
+  thead { /*Wybiera na podstawie nazwy elementu thead*/
+    background-color: darkcyan; /*Ustawia kolor tla*/
   }
   
   /*Dla linijek tabeli Cennik*/
-  th, td{
-    padding: 5px;
+  th, td{ /*Wybiera na podstawie nazwy elementu th,td*/
+    padding: 5px; /*Ustawiamy odstep wewnetrzny*/
   }
   
   
-  
   /*Animacje tabeli Cennik*/
-  tbody tr:nth-child(even) {
-    background-color: #666666;
-    color: white;
+  tbody tr:nth-child(even) { /*Wybiera na podstawie zaznaczania wszystkich elementow tbody elementow wewnatrz tr:nth-child(even)*/
+    background-color: #666666; /*Ustawianie kolory tla*/
+    color: white; /*Ustawianie koloru*/
   }
   
   /*Animacje tabeli Cennik*/
-  tbody tr:nth-child(odd) {
-    background-color: whitesmoke;
+  tbody tr:nth-child(odd) { /*Wybiera na podstawie zaznaczania wszystkich elementow tbody elementow wewnatrz tr:nth-child*/
+    background-color: whitesmoke; /*Ustawia kolor tla*/
   }
   
   /*Animacje tabeli Cennik*/
-  tbody td:nth-child(even) {
-    font-weight: bold;
+  tbody td:nth-child(even) { /*Wybiera na podstawie zaznaczania wszystkich elementow tbody elementow wewnatrz tr:nth-even*/
+    font-weight: bold; /*Definiowanie grubosci czcionki*/
   }
   
   /*Animacje tabeli Cennik*/
-  tbody tr:hover {
-    background-color: red;
-    cursor: pointer;
+  tbody tr:hover { /*Wybiera na podstawie zaznaczania wszystkich elementow tbody elementow wewnatrz tr:hover*/
+    background-color: red; /*Ustawia kolor tla*/
+    cursor: pointer; /*Okresla zachowanie kursora znajdujacego sie na danym elemencie*/
   }    
-      
-  #name /*Formularz kontaktowy - Imie i nazwisko*/
+  
+  /*Formularz kontaktowy - Imie i nazwisko*/
+  #name  /*Wybiera na podstawie elementu o okreslonym identyfikatorze name*/
   {
-      background-color: lightgray;
-      min-height: 20px;
+      background-color: lightgray; /*Ustawia kolor tla*/
+      min-height: 20px; /*Okreslamy minimalny rozmiar wysokosci obszaru zawartosci interesujacego nas elementu body*/
   }
  
  

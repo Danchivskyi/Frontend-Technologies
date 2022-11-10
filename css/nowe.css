@@ -1,93 +1,98 @@
+/*CSS file, ktory jest potrzebny dla about.html w celu stylizacji bloku Orders */
+
+/*Importowanie czcnionek*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-*{
-  font-family: 'Poppins', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  outline: none; border:none;
-  text-transform: capitalize;
-  transition: all .2s linear;
+*{ /*Wybieranie na podstawie wszystkich elementow*/
+  font-family: 'Poppins', sans-serif; /*Pozwala na zadaklerowanie wiekszej ilosci czcionek*/
+  margin:0; /*Definiuje wielkosc marginesu dla elementu*/
+  padding:0; /*Odstep wewnetrzny*/
+  box-sizing: border-box; /*Okresla ktore czesci elemntu powinny byc brane pod uwage przy okreslaniu miejsca zajmowanego przez element*/
+  outline: none; /*Definiuje wlasciwosci obramowania*/
+  border:none; /*Okresla styl obramowania wszystkich stron elementu*/
+  text-transform: capitalize; /*Przeksztalca caly tekst na pisany duzymi literami*/
+  transition: all .2s linear; /*Efekt przejscia*/
 }
 
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:25px;
-  min-height: 100vh;
-  background: linear-gradient(90deg, #eae9e3 60%, #d8d6c5 40.1%);
+.container{ /*Wybranie na podstawie elementu z okreslona klasa*/
+  display: flex; /*Definiuje sposob wyswietlania elementu*/
+  justify-content: center; /*Okresla wyrownanie zawartosci elementow wewnatrz rodzica z wyswietleniem flex, jesli nie cala zawarosc jest zajeta*/
+  align-items: center; /*Zapewnia wyrownanie dla elemnentow wewnatarz rodzica z wyswietleniem flex*/
+  padding:25px; /*Odstep wewnetrzny*/
+  min-height: 100vh; /*Okreslamy minimalny rozmiar wysokosci obszaru zawartosci elementu*/
+  background: linear-gradient(90deg, #eae9e3 60%, #d8d6c5 40.1%); /*Ustawia wlasciwosci tla*/
 }
 
-.container form{
-  padding:20px;
-  width:700px;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+.container form{ /*Wybieranie na podstawie elementu z okresona nazwa w srodku form elementow*/
+  padding:20px; /*Odstep wewnetrzny*/
+  width:700px; /*Ustawia szerokosc ekranu*/
+  background: #fff; /*Ustawia wlasciwosci tla*/
+  box-shadow: 0 5px 10px rgba(0,0,0,.1); /*Zmienianie cieni z zewnetrznego na cien wewnetrzny elementu*/
 }
 
-.container form .row{
-  display: flex;
-  flex-wrap: wrap;
-  gap:15px;
+.container form .row{ /*Zaznaczza wszystkie elementy o nazwie container w srodku form elementow bedacych potomkiem elemntu o nazwie row*/
+  display: flex; /*Definiuje sposob wyswietlania elementu*/
+  flex-wrap: wrap; /*Okresla, ze elementy beda przenoszone do kolejnej linii jezeli znajdzie sie taka potrzeba*/
+  gap:15px; /*Definiuje rozmiar przerwy miedzy wierszami i kolumnami*/
 }
 
-.container form .row .col{
-  flex:1 1 250px;
+.container form .row .col{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementow bedacych potomkami row i col*/
+  flex:1 1 250px; /*Zarzadzanie wyrownaniem*/
 }
 
-.container form .row .col .title{
-  font-size: 20px;
-  color:#333;
-  padding-bottom: 5px;
-  text-transform: uppercase;
+.container form .row .col .title{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementow bedacych potomkami row, col, title*/
+  font-size: 20px; /*Definiuje wielkosc czcionki*/
+  color:#333; /*Ustawienie koloru*/
+  padding-bottom: 5px; /*Okresla rozmiar dolnego wewnetrznego marginesu*/
+  text-transform: uppercase; /*Przeksztalca caly tekst na pisany duzymi literami*/
 }
 
-.container form .row .col .inputBox{
-  margin:15px 0;
+.container form .row .col .inputBox{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementow bedacych potomkami row, col, inputBox*/
+  margin:15px 0; /*Definiuje wielkosc marginesu dla elemnentu*/
 }
 
-.container form .row .col .inputBox span{
-  margin-bottom: 10px;
-  display: block;
+.container form .row .col .inputBox span{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementow bedacych potomami row, col, inputBox, elementu span*/
+  margin-bottom: 10px; /*Definiuje wielkosc dolnego marginesu*/
+  display: block; /*Definiuje sposob wyswietlenia elementu*/
 }
 
-.container form .row .col .inputBox input{
-  width: 100%;
-  border:1px solid #ccc;
-  padding:10px 15px;
-  font-size: 15px;
-  text-transform: none;
+.container form .row .col .inputBox input{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementu bedacych potomkami row, col, inputBox, elementu input*/
+  width: 100%; /*Ustawia szerokosc elementu*/
+  border:1px solid #ccc; /*Okresla styl obramowania wszystkich stron elementu*/
+  padding:10px 15px; /*Okresla rozmiar wewnetrznego marginesu*/
+  font-size: 15px; /*Definiuje wielkosc czcionki*/
+  text-transform: none; /*Przeksztalca caly tekst na pisany duzymi literami*/
 }
 
-.container form .row .col .inputBox input:focus{
-  border:1px solid #000;
+.container form .row .col .inputBox input:focus{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementu bedacych potomkami row, col, inputBox, elementu input:focus*/
+  border:1px solid #000; /*Okresla styl obramowania wszystkich stron elementu*/
 }
 
-.container form .row .col .flex{
-  display: flex;
-  gap:15px;
+.container form .row .col .flex{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementu bedacych potomkami row, col, flex*/
+  display: flex; /*Ustawia sposob wyswietlania elementu*/
+  gap:15px; /*Definiuje rozmiar przerwy miedzy wierszami i kolumnami*/
 }
 
-.container form .row .col .flex .inputBox{
-  margin-top: 5px;
+.container form .row .col .flex .inputBox{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementu bedacych potomkami row, col, flex, inputBox*/
+  margin-top: 5px; /*Definiuje wielkosc gornego marginesu*/
 }
 
-.container form .row .col .inputBox img{
-  height: 34px;
-  margin-top: 5px;
-  filter: drop-shadow(0 0 1px #000);
+.container form .row .col .inputBox img{ /*Zaznacza wszystkie elementy o nazwie container w srodku form elementu bedacych potomkami row, col, flex, inputBox, elementu img*/
+  height: 34px; /*Ustawia wysokosc*/
+  margin-top: 5px; /*Definiuje wielkosc gornego marginesu*/
+  filter: drop-shadow(0 0 1px #000); /*Stosuje sie do renderowania obrazow*/
 }
 
-.container form .submit-btn{
-  width: 100%;
-  padding:12px;
-  font-size: 17px;
-  background: #27ae60;
-  color:#fff;
-  margin-top: 5px;
-  cursor: pointer;
+.container form .submit-btn{ /*Zaznacza wszystkie elementy o nazwie coontainer w srodku form bedacych potomkami submit-btn*/
+  width: 100%; /*Ustawia szeroskosc ekranu*/
+  padding:12px; /*Okresla rozmiar wewnetrznego marginesu*/
+  font-size: 17px; /*Definiuje wielkosc czcionki*/
+  background: #27ae60; /*Ustawia wlasciwosc tla*/
+  color:#fff; /*Ustawia kolor tla*/
+  margin-top: 5px; /*Definiuje wielkosc fornego marginesu*/
+  cursor: pointer; /*Okresla wyglad kursora myszy*/
 }
 
-.container form .submit-btn:hover{
-  background: #2ecc71;
+.container form .submit-btn:hover{ /*Zaznacza wszystkie elementy o nazwie container w srodku form bedacych potomkami submit-btn:hover*/
+  background: #2ecc71; /*Ustawia wlasciwosc tla*/
 }

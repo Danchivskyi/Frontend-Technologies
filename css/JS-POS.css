@@ -1,54 +1,88 @@
-/* (A) WRAPPER */
-* {
-  font-family: arial, sans-serif;
-  box-sizing: border-box;
-}
-body {
-  display: flex;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-#poslist { width: 70%; }
-#poscart { width: 30%; }
+/*CSS file, ktory jest potrzebny dla buy.html w celu stylizacji bloku Items*/
 
-/* (B) PRODUCTS LIST */
-#poslist {
-  display: grid;
-  grid-template-columns: auto auto auto;
+/*Wrapper*/
+* { /*Wybiera na podstawie wszystkich elementow*/
+  font-family: arial, sans-serif; /*Pozwala na zadeklarowanie wiekszej ilosci czcionek*/
+  box-sizing: border-box; /*Okresla ktore czesci elementu powinny buc brane pod uwage przy okreslaniu miejsca zajmowanego przez element*/
 }
-.pwrap {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background: #fbfbfb;
-  cursor: pointer;
-  text-align: center;
+body { /*Wybiera na podstawie nazwy elementu body*/
+  display: flex; /*Ustawia sposob wyswietlania elementu*/
+  max-width: 1000px; /*Maksymalna szerokosc elemnentu*/
+  margin: 0 auto; /*Ustawianie zewnetrznego marginesu*/
 }
-.pimg { max-width: 100px; max-height: 100px; }
-.pname { font-weight: 700; }
-.pprice { color: #639aff; }
+#poslist { /*Wybiera na podstawie elementu o okreslonym identyfikatorze poslist*/
+  width: 70%; /*Ustawianie szerokosci*/
+} 
+#poscart { /*Wybiera na podstawie elementu o okreslonym identyfikatorze poscart*/
+  width: 30%; /*Ustawianie szerokosci*/
+} 
 
-/* (C) CART */
-#poscart {
-  padding: 10px;
-  background: #f7f7f7;
+/*Products List*/
+#poslist { /*Wybiera na podstawie elementu o okreslonym identyfikatorze poslist*/
+  display: grid; /*Ustawia sposob wyswietlania elementu*/
+  grid-template-columns: auto auto auto; /*Okreslamy nazwy poszczegolnych linii kolumnowych budujacych siatke interesujacego nas elementu*/
 }
-.citem > * { box-sizing: border-box; }
-.citem, .cname { width: 100%;}
-.citem { padding: 10px; }
-.cname{ display: block; }
-.cdel { width: 25%; }
-.cqty { width: 75%; }
-#ctotal { font-weight: 700; padding: 10px; }
-.cdel, .cqty, #cempty, #ccheckout { padding: 10px; }
-.cdel, #cempty, #ccheckout {
-  background: #9a2121;
-  border: 1px solid #9a2121;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
+.pwrap { /*Wybranie na podstawie elementu z okreslona klasa*/ 
+  margin: 10px; /*Ustawianie zewnetrznego marginesu*/
+  padding: 10px; /*Ustawianie obszaru zawartego pomiedzy obramowaniem a zawartoscia elementu*/
+  border: 1px solid #ddd; /*Okresla styl obramowania wszystkich stron elementu*/
+  background: #fbfbfb; /*Ustawia rozne własciwosci tla*/
+  cursor: pointer; /*Okresla zachowanie kursora znajdujacego sie na danym elemencie*/
+  text-align: center; /*Wyrownuje tekst do lewej strony*/
 }
-#cempty, #ccheckout { margin: 5px; }
+.pimg {  /*Wybranie na podstawie elementu z okreslona klasa*/ 
+  max-width: 100px; /*Definiuje maksymalna szerokosc elementu*/
+  max-height: 100px; /*Definiuje maksymalna wysokosc elementu*/
+} 
+.pname { /*Wybranie na podstawie elementu z okreslona klasa*/ 
+  font-weight: 700; /*Styl definiuje grubosc (wage) czcionki*/
+}
+.pprice { /*Wybranie na podstawie elementu z okreslona klasa*/ 
+  color: #639aff; /*Ustawia kolor*/
+}
 
-/* (D) RECEIPT */
-#posreceipt { display: none; }
+/*Cart*/
+#poscart { /*Wybiera na podstawie elementu o okreslonym identyfikatorze poscart*/
+  padding: 10px; /*Ustawia wewnetrzny margines*/
+  background: #f7f7f7; /*Ustawia kolor tla*/
+}
+.citem > * { /*Wybranie na podstawie elementu z okreslona klasa*/
+  box-sizing: border-box; /*/*Okresla ktore czesci elementu powinny buc brane pod uwage przy okreslaniu miejsca zajmowanego przez element*/
+}
+.citem, .cname { /*Wybranie na podstawie elementu z okreslona klasa*/
+  width: 100%; /*Ustawia szerokosc*/
+}
+.citem { /*Wybranie na podstawie elementu z okreslona klasa*/
+  padding: 10px; /*Ustawia wewnetrzny margines*/
+}
+.cname{ /*Wybranie na podstawie elementu z okreslona klasa*/
+  display: block; /*Ustawia sposob wyswietlania elementu*/
+}
+.cdel { /*Wybranie na podstawie elementu z okreslona klasa*/
+  width: 25%; /*Ustawianie szerokosc ekranu*/
+}
+.cqty { /*Wybranie na podstawie elementu z okreslona klasa*/
+  width: 75%; /*Ustawianie szerokosc ekranu*/
+}
+#ctotal { /*Wybiera na podstawie elementu o okreslonym identyfikatorze ctotal*/
+  font-weight: 700; /*Styl definiuje grubosc (wage) czcionki*/
+  padding: 10px; /*Ustawia wewnetrzny margines*/
+}
+.cdel, .cqty, #cempty, #ccheckout { /*Wybiera na podstawie elementu o okreslonym identyfikatorze oraz elemncie z okreslona nazwa */
+  padding: 10px; /*Ustawia wewnetrzny margines*/
+}
+.cdel, #cempty, #ccheckout { /*Wybiera na podstawie elementu o okreslonym identyfikatorze oraz elemncie z okreslona nazwa */
+  background: #9a2121; /*Ustawia kolor tla*/
+  border: 1px solid #9a2121; /*Okresla styl obramowania wszystkich stron elementu*/
+  color: #fff; /*Ustawia kolor*/
+  font-weight: 700; /*Styl definiuje grubosc (wage) czcionki*/
+  cursor: pointer; /*Okresla zachowanie kursora znajdujacego sie na danym elemencie*/
+}
+#cempty, #ccheckout { /*Wybiera na podstawie elementu o okreslonym identyfikatorze chatborder*/
+  margin: 5px; /*Ustawianie zewnetrznego marginesu*/
+} 
+
+/*Receipt*/
+#posreceipt { /*Wybiera na podstawie elementu o okreslonym identyfikatorze chatborder*/
+  display: none; /*Ustawia sposob wyswietlania elementu*/
+}

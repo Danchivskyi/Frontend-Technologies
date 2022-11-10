@@ -1,55 +1,57 @@
-body {
-  font: 15px arial, sans-serif;
-  background-color: #d9d9d9;
-  padding-top: 15px;
-  padding-bottom: 15px;
+/*CSS file, ktory jest dla chat.html w celu stylizacji chatbox*/ 
+
+body { /*Wybiera na podstawie nazy elementu body*/
+  font: 15px arial, sans-serif; /*Ustawianie czcionki*/
+  background-color: #d9d9d9; /*Ustawianie koloru tla*/
+  padding-top: 15px; /*Okreslenie rozmiaru gornego wewnetrznego marginesu*/
+  padding-bottom: 15px; /*Okreslenie rozmiaru dolnego wewnetrznego marginesu*/
 }
 
-#bodybox {
-  margin: auto;
-  max-width: 550px;
-  font: 15px arial, sans-serif;
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  padding-left: 25px;
-  box-shadow: 5px 5px 5px grey;
-  border-radius: 15px;
+#bodybox { /*Wybiera na podstawie elementu o okreslonym identyfikatorze bodybox*/
+  margin: auto; /*Wielkosc marginesu dla elementu*/
+  max-width: 550px; /*Maksymalna szerokosc elemnentu*/
+  font: 15px arial, sans-serif; /*Ustawianie czcionki*/
+  background-color: white; /*Ustawianie koloru tla*/ 
+  border-style: solid; /*Styl obramowania wszystkich stron elementu*/
+  border-width: 1px; /*Rozmiar grubosci obramowania*/
+  padding-top: 20px; /*Okreslenie rozmiaru gornego wewnetrznego marginesu*/
+  padding-bottom: 25px; /*Okreslenie rozmiaru dolnego wewnetrznego marginesu*/
+  padding-right: 25px; /*Okreslenie rozmiaru prawego wewnetrznego marginesu*/
+  padding-left: 25px; /*Okreslenie rozmiaru lewego wewnetrznego marginesu*/
+  box-shadow: 5px 5px 5px grey; /*Zmienia cien z zewnetrznego (outset) na cien wewnetrzny (inset)*/
+  border-radius: 15px; /*Okresla ksztalt zaokraglania naroznikow*/
 }
 
-#chatborder {
-  border-style: solid;
-  background-color: #f6f9f6;
-  border-width: 3px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 20px;
-  padding-left: 15px;
-  border-radius: 15px;
+#chatborder {  /*Wybiera na podstawie elementu o okreslonym identyfikatorze chatborder*/
+  border-style: solid; /*Styl obramowania wszystkich stron elementu*/
+  background-color: #f6f9f6; /*Ustawianie koloru tla*/
+  border-width: 3px; /*Rozmiar grubosci obramowania*/
+  margin-top: 20px; /*Rozmiar gonego zewnetrznego marginesu */
+  margin-bottom: 20px; /*Rozmiar dolnego zewnetrznego marginesu*/
+  margin-left: 20px; /*Rozmiar lewego zewnetrznego marginesu*/
+  margin-right: 20px; /*Rozmiar prawego zewnetrznego marginesu*/
+  padding-top: 10px; /*Okreslenie rozmiaru gornego wewnetrznego marginesu*/
+  padding-bottom: 15px; /*Okreslenie rozmiaru dolnego wewnetrznego marginesu*/
+  padding-right: 20px; /*Okreslenie rozmiaru prawego wewnetrznego marginesu*/
+  padding-left: 15px; /*Okreslenie rozmiaru lewego wewnetrznego marginesu*/
+  border-radius: 15px; /*Okresla ksztalt zaokraglania naroznikow*/
 }
 
-.chatlog {
-   font: 15px arial, sans-serif;
+.chatlog { /*Wybranie na podstawie elementu z okreslona klasa*/ 
+   font: 15px arial, sans-serif; /*Ustawianie czcionki*/
 }
 
-#chatbox {
-  font: 17px arial, sans-serif;
-  height: 22px;
-  width: 100%;
+#chatbox { /*Wybiera na podstawie elementu o okreslonym identyfikatorze chatbox*/
+  font: 17px arial, sans-serif; /*Ustawianie czcionki*/
+  height: 22px; /*Ustawianie wysokosci*/
+  width: 100%; /*Ustawianie szerokosci*/
 }
 
-h1 {
-  margin: auto;
+h1 { /*Wybiera na podstawie nazy elementu h1*/
+  margin: auto; /*Ustawianie zewnetrznego marginesu*/
 }
 
-pre {
-  background-color: #f0f0f0;
-  margin-left: 20px;
+pre { /*Wybiera na podstawie nazy elementu pre*/
+  background-color: #f0f0f0; /*Ustawianie koloru tla*/
+  margin-left: 20px; /*Rozmiar lewego zewnetrznego marginesu*/
 }

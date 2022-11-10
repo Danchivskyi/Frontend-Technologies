@@ -1,3 +1,4 @@
+<!--PHP file, ktory jest potrzebny dla rejestracji nowych uzytkownikow--> 
 <?php include('secure.php') ?>
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
@@ -49,7 +50,8 @@
 			<div class="form-group">
 				<button type="submit" name="rejestracja" id="przycisk">Zarejestruj się</button>
 			</div>
-			
+
+			<!--Sprawdzanie bledow, ktore moga wystapic np. podczas wypelniania formularza-->
 			<div id="error">
 				<?php if(count($errors) > 0) : ?>
 				<?php foreach($errors as $error) : ?>

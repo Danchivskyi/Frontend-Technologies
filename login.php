@@ -1,3 +1,4 @@
+<!--PHP file, ktory jest potrzeby dla logowania-->
 <?php include('secure.php') ?>
 <!DOCTYPE html>
 <html>
@@ -29,7 +30,8 @@
 		<div class="form-group">
 			<button type="submit" id="przycisk" name="zaloguj">Login</button>
 		</div>
-			
+		
+		<!--Sprawdzanie bledow, ktore moga wystapic np. podczas wypelniania formularza-->
 		<div id="error">
 			<?php if(count($errors) > 0) : ?>
 			<?php foreach($errors as $error) : ?>

@@ -1,13 +1,12 @@
+<!--Plik dla bloku Items (dla biletow)-->
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- META -->
     <title>JS POS Experiment</title>
     <meta charset="utf-8">
     <meta name="description" content="Experimental JS POS System">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
 
-    <!-- ICONS -->
     <link rel="icon" href="images/favicon.png" type="image/png">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="white">
@@ -18,26 +17,26 @@
     <meta name="msapplication-TileImage" content="images/icon-512.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
-    <!-- MANIFEST + SERVICE WORKER -->
+    <!-- Manifest + Service Worker -->
     <link rel="manifest" href="manifest.json">
     <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("worker.js");
+    if ("serviceWorker" in navigator) { //sprawdzanie czy service worker jest w navigator 
+      navigator.serviceWorker.register("js/worker.js"); // jesli jest to odbywa sie rejestracja worker
     }
     </script>
 
     <!-- POS CSS + JS -->
     <link rel="stylesheet" href="css/JS-POS.css"/>
-    <script src="JS-POS.js"></script>
+    <script src="js/JS-POS.js"></script>
   </head>
   <body>
-    <!-- (A) PRODUCTS LIST -->
+    <!--Products List -->
     <div id="poslist"></div>
 
-    <!-- (B) CART -->
+    <!--Cart-->
     <div id="poscart"></div>
 
-    <!-- (C) NINJA RECEIPT -->
+    <!--Ninja Receipt-->
     <div id="posreceipt"></div>
   </body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <!--Kodowanie dla dokumentu-->
+    <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/Style.css">
     
-
+    <!--Podlaczenie zewnetrznych plikow-->
     <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script
             src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
     <script src="js/semantic.min.js"></script>
+
     <title>System obsługi</title>
 </head>
 <body>
 
-
+<!--Opasek, na ktorym znajduje sie menu-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
 
      <a class="navbar-brand">
@@ -64,49 +64,49 @@
    <section>
 <!--Login Panel-->
 <?php
-		session_start();
+		session_start(); // uruchamianie sesji
 
-		if(!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "Nie jesteś zalogowany";
+		if(!isset($_SESSION['username'])) { //zwraca true lub false w zaleznosci czy istnieje, czy nie
+		    $_SESSION['msg'] = "Nie jesteś zalogowany"; //$_SESSION przechowuje zmienne zarejestrowane w sesji
 		}
 
-		if(isset($_GET['logout'])) {
-		session_destroy();
-		unset($_SESSION['username']);
-		header("location: index.php");
-		}
+		if(isset($_GET['logout'])) { //dane przeslane ta metoda trafiaja do tablicy GET
+		    session_destroy(); // niszczy wszystkie dane skojarzone z biezaca sesja
+		    unset($_SESSION['username']); //niszczy okreslna zmienna 
+		    header("location: index.php");
+        }
 ?>
     <nav class="card">
-	<?php if(!isset($_SESSION['username'])) : ?>
-		<?php
-			echo '<li><a href="register.php">Rejestracja</a></li></ul>';
-			echo '<p>Nie jesteś zalogowany. <p>Proszę się zalogować.<li><a href="login.php"><br>Zaloguj się.</a></li></p>';
-		?>
-	<?php endif ?>
+        <?php if(!isset($_SESSION['username'])) : ?> <!--zwraca true lub false w zaleznosci czy istnieje, czy nie-->
+            <?php
+            echo '<li><a href="register.php">Rejestracja</a></li></ul>'; // przekierowuje na rejestracje
+            echo '<p>Nie jesteś zalogowany. <p>Proszę się zalogować.<li><a href="login.php"><br>Zaloguj się.</a></li></p>'; // przekierowuje na logowanie
+            ?>
+        <?php endif ?>
 				
 					
-	<?php if(isset($_SESSION['success'])) : ?>
+	<?php if(isset($_SESSION['success'])) : ?> <!--zwraca true lub false w zaleznosci czy istnieje, czy nie-->
 		<div class="error success" >
 			<?php
-				echo $_SESSION['success'];
-				unset($_SESSION['success']);
+			echo $_SESSION['success']; // wyswietlenie powodzenia sesji
+			unset($_SESSION['success']); // niszczenie okreslonej zmiennej
 			?>
 		</div>
 	<?php endif ?>
 
-	<?php if(isset($_SESSION['username'])) : ?>
+	<?php if(isset($_SESSION['username'])) : ?> <!--zwraca true lub false w zaleznosci czy istnieje, czy nie-->
 		<p>Witaj
 			<strong>
-				<?php echo " " . $_SESSION['username']; ?>
+				<?php echo " " . $_SESSION['username']; ?> <!--Wyswietla napis przy zalogowaniu sie-->
 			</strong>
 			
-			<p><a href="index.php?logout='1'" style="color: red;">Wyloguj</a>
+			<p><a href="index.php?logout='1'" style="color: red;">Wyloguj</a> <!--Mozliwosc wylogowania sie-->
 	<?php endif ?>
 	<!---->
     </section>
 
 
-
+<!--Okienko z wiekszymi blokami na ktorych mozemy przejsc na odpowiedni proces-->
 <div id="dashboardPanel">
 <div class="ui link cards" style="margin: 3%">
 

@@ -1,60 +1,62 @@
-#navbarSupportedContent{
-    font-size: 20px;
+/*CSS file, ktory jest potrzebny dla index.php, w celu stylizacji glownych elementow strony glownej*/
+
+#navbarSupportedContent{ /*Wybiera na podstawie elementu o okreslonym identyfikatorze navbarSupportedContent*/
+    font-size: 20px; /*Definiowanie wielkosci czcionki*/
 }
-#navbarSupportedContent ul li{
-    padding-left: 20px;
+#navbarSupportedContent ul li{ /*Wybiera na podstawie elementu o okreslonym identyfikarorze navbarSupportedContent wewnatrz elementu ul li*/
+    padding-left: 20px; /*Odstep lewy wewnetrzny marginesu */
 }
 
-.buttons button{
-    width: 90px;
+.buttons button{  /*Wybranie na podstawie elementu z okreslona klasa*/
+    width: 90px; /*Ustawia szerokosc elementu*/
 }
-a{
-    color: white;
-    text-decoration: none;
+a{ /*Wybuera na podstawie nazwy elementu a*/
+    color: white; /*Ustawia kolor*/
+    text-decoration: none; /*Ustawia rodzaj dekoracji tekstu do uzycia*/
 }
-a:hover{
-    text-decoration: none;
-    color: white;
+a:hover{ /*Wybiera na podstawie elementu a dziedziczacych z hover*/
+    text-decoration: none; /*Ustawia rodzaj dekoracji tekstu do uzycia*/
+    color: white; /*Ustawia kolor*/
 }
 
- #itemForm{
-     position: absolute;
-     top: 70%;
-     left: 0;
+ #itemForm{ /*Wybiera na podstawie elementu o okreslonym identyfikatorze itemForm*/
+     position: absolute; /*Okresla typ metody pozycjonowania zastosowanej dla elementu*/
+     top: 70%; /*Ustawianie gornej strony elementu*/
+     left: 0; /*Ustawienie lewej strony elementu*/
  }
 
-#itemTable{
-    position: absolute;
-    top: 70%;
-    left: 52%;
+#itemTable{ /*Wybiera na podstawie elementu o okreslonym identyfiktorze itemTable*/
+    position: absolute; /*Okresla typ metody pozycjonowania zostosowanej dla elementu*/
+    top: 70%; /*Ustawianie gornej strony elementu*/
+    left: 52%; /*Ustawienie lewej strony elementu*/
 }
 
-.lbl{
-    font-size: 25px;
-    font-family: 'Oswald', sans-serif;
+.lbl{ /*Wybranie na podstawie elementu z okreslona klasa*/
+    font-size: 25px; /*Definiowanie wielkosci czcionki*/
+    font-family: 'Oswald', sans-serif; /*Pozwala na zadaklerowanie wiekszej ilosci czcionek*/
 }
-#customerForm{
-    position: absolute;
-    top: 30%;
-    left: 40%;
+#customerForm{ /*Wybiera na podstawie elementu o okreslonym identyfiktorze customerForm*/
+    position: absolute; /*Okresla typ metody pozycjonowania zostosowanej dla elementu*/
+    top: 30%; /*Ustawianie gornej strony elementu*/
+    left: 40%; /*Ustawienie lewej strony elementu*/
+} 
+#orderForm{ /*Wybiera na podstawie elementu o okreslonym identyfiktorze orderForm*/
+    position: absolute; /*Okresla typ metody pozycjonowania zostosowanej dla elementu*/
+    top: 30%; /*Ustawianie gornej strony elementu*/
+    left: 0; /*Ustawienie lewej strony elementu*/
 }
-#orderForm{
-    position: absolute;
-    top: 30%;
-    left: 0;
+form{ /*Wybeira na podstawie nazwy elementu form*/
+    margin: 1%!important; /*Definiuje wielkosc marginesu dla elementu*/
 }
-form{
-    margin: 1%!important;
+#btnProceed{ /*Wybiera na podstawie elementu o okreslonym identyfiktorze btnProceed*/
+    position: absolute; /*Okresla typ metody pozycjonowania zostosowanej dla elementu*/
+    left: 70%; /*Ustawianie lewej strony elementu*/
+    top: 135%; /*Ustawianie gornej strony elementu*/
+    width: 150px; /*Ustawia szerokosc elementu*/
 }
-#btnProceed{
-    position: absolute;
-    left: 70%;
-    top: 135%;
-    width: 150px;
-}
-#btnClear{
-    position: absolute;
-    left: 85%;
-    top: 135%;
-    width: 150px;
+#btnClear{ /*Wybiera na podstawie elementu o okreslonym identyfiktorze btnProceed*/
+    position: absolute; /*Okresla typ metody pozycjonowania zostosowanej dla elementu*/
+    left: 85%; /*Ustawianie lewej strony elementu*/
+    top: 135%; /*Ustawianie gornej strony elementu*/
+    width: 150px; /*Ustawia szerokosc elementu*/
 }
