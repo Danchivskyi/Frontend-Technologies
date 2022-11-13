@@ -34,8 +34,7 @@
     <a class="navbar-brand"  style="font-size: 25px;color: white">
         System obsługi
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -172,6 +171,7 @@
     </div>
 </div>
 
+<!--Definiuje liczbe wierszy lub wysokosc elementu-->
 <div class="row">
     <div class="col-lg-6">
     </div>

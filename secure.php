@@ -50,10 +50,10 @@
 		echo 'Nie mozna utworzyc tabeli: ' . $conn->error . '<br/>';
 	}
 
-//isset jest jednym z najważniejszych narzędzi do walidacji dancyh w PHP
+//isset jest jednym z najważniejszych narzędzi do walidacji danych w PHP
 //isset sprawdza czy zmienna ktora zostala mu podana jest ustawiona
 if (isset($_POST['rejestracja'])) {
-	$username = mysqli_real_escape_string($conn, $_POST['uName']);
+	$username = mysqli_real_escape_string($conn, $_POST['uName']); // "mysqli_real_escape_string" wycofuje znaki specjalne w ciągu do użycia w instrukcji SQL, biorąc pod uwagę bieżący zestaw znaków połączenia
 	$email = mysqli_real_escape_string($conn, $_POST['email']);
 	$password_1 = mysqli_real_escape_string($conn, $_POST['pass']);
 	$password_2 = mysqli_real_escape_string($conn, $_POST['rpass']);
@@ -114,10 +114,10 @@ if (isset($_POST['zaloguj'])) {
 		array_push($errors, "Potrzebujemy haslo");
 	}
 
-	if (count($errors) == 0) {
-		$password = md5($password);
+	if (count($errors) == 0) { // wuliczanie ilosci elementow w tablicy
+		$password = md5($password); // szyfrowanie
 		$zapytanie = "SELECT * FROM uzytkownicy WHERE user='$username' AND password='$password'";
-		$wynik = mysqli_query($conn, $zapytanie);
+		$wynik = mysqli_query($conn, $zapytanie); // wykonuje zapytanie do bazy danych
 		if (mysqli_num_rows($wynik) == 1) { // zwraca liczbę wierszy w wyniku
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "Zostałeś zalogowany.";
