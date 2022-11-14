@@ -3,8 +3,8 @@
 const cName = "demo-pwa",
 cFiles = [
   "buy.html",
-  "css/JS-POS.css",
-  "JS-POS.js",
+  "css/ESOK.css",
+  "js/ESOK.js",
 
   // Add images 
   "images/ticket.jpg",
